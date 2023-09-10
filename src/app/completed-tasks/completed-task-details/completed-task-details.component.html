@@ -1,0 +1,26 @@
+<div class="row">
+    <div class="col-xs-12">
+        <h1>{{completedTask.name}}</h1>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <div class="btn-group" appDropdown>
+            <button type="button" class="btn btn-primary dropdown-toggle">Manage Task <span
+                    class="caret"></span></button>
+            <ul class="dropdown-menu">
+                <li>
+                    <a style="cursor: pointer;" (click)="onActivate()" >Activate</a>
+                </li>
+                <li>
+                    <a style="cursor: pointer;" (click)="onDelete()">Delete</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        {{completedTask.description}}
+    </div>
+</div>

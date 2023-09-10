@@ -1,0 +1,8 @@
+<div class="row">
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <app-completed-task-item *ngFor="let completedTaskElement of completedTasks;let i=index"
+            [completedTask]="completedTaskElement" [index]="i"></app-completed-task-item>
+    </div>
+</div>
